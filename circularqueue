@@ -1,0 +1,86 @@
+#include<stdio.h>
+#define N 5
+int CicrularQueue[N];
+int Front=-1,Rear=-1;
+void Insert()
+{
+int x;
+printf("Enter the value of x\n");
+scanf("%d",&x);
+if(Front==0 && Rear==N-1)
+{
+printf("Circular Queue overflow condition\n");
+}
+if(Front==-1 && Rear==-1)
+{
+int Front=0;
+int Rear;}
+else if((Rear==(N-1) && (Front!=0))
+{
+Rear=0;
+}
+else{
+Rear=Rear+1;
+}
+Rear++;
+CircularQueue[Rear]=x;
+}
+void Delete()
+{
+int item;
+printf("Enter the item to be deleted\n");
+scanf("%d",,&item);
+if(Front=-1)
+{
+printf("Circular Queue Underflow condition\n");
+}
+item=CircularQueue[Front];
+if(Front=Rear)
+{
+Front=Rear=-1;
+}
+else
+{
+if Front==N && Front==-1;
+{
+int Front=0;
+}
+else{
+ Front=Front++;}
+}}}
+
+void display()
+{
+int i=Front;
+if(Front==-1 && Rear=-1){
+printf("Queue is empty\n");
+}
+else{
+printf("Queue is:");
+do{
+printf("%d",CircularQueue[i]);
+i=(i+1)%N;
+}
+while(i!=(rear+1)%N);
+printf("\n");
+}}
+void main()
+{
+int choice;
+do
+{
+printf("Enter 1 for insert,2 for delete,3 for display and 4 for exit\n");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:Insert();
+break;
+case 2: Delete();
+break;
+case 3: display();
+break;
+case 4: printf("You have exited\n");
+
+}}
+while(choice!=4);
+}
