@@ -1,0 +1,88 @@
+import java.util.Scanner;
+
+class Bank {
+    public static void main(String[] args) {
+        Sav_acc savingsAccount = new Sav_acc();
+        savingsAccount.displayBalance();
+        savingsAccount.compoundInterest();
+        savingsAccount.withdraw();
+
+        Curr_acct currentAccount = new Curr_acct();
+        currentAccount.displayBalance();
+        currentAccount.chequeBook();
+    }
+}
+
+class Account {
+    String cust_name;
+    String acc_no;
+    String acc_types;
+    double min_balance;
+    double service_charge;
+    double balance;
+
+    Scanner sc = new Scanner(System.in);
+
+    Account() {
+        System.out.println("Enter customer name:");
+        cust_name = sc.nextLine();
+        System.out.println("Enter account number:");
+        acc_no = sc.nextLine();
+        System.out.println("Enter the minimum balance:");
+        min_balance = sc.nextDouble();
+    }
+
+    void deposit(double amount) {
+        balance += amount;
+        System.out.println("Deposit of $" + amount + " successful.");
+    }
+
+    void displayBalance() {
+        System.out.println("Balance: $" + balance);
+    }
+
+    void withdraw(double amount) {
+        if (balance - amount < min_balance) {
+            System.out.println("Insufficient funds. Service charge of $" + service_charge + " imposed.");
+            balance -= service_charge;
+        } else {
+            balance -= amount;
+            System.out.println("Withdrawal of $" + amount + " successful.");
+        }
+    }
+}
+
+class Sav_acc extends Account {
+    double interest_rate;
+
+    Sav_acc() {
+        System.out.println("Enter balance:");
+        balance = sc.nextDouble();
+        System.out.println("Enter interest rate:");
+        interest_rate = sc.nextDouble();
+    }
+
+    void compoundInterest() {
+        double interest = balance * interest_rate / 100;
+        deposit(interest);
+        System.out.println("Interest of $" + interest + " credited.");
+    }
+
+    void withdraw() {
+        System.out.println("Enter withdrawal amount:");
+        double amount = sc.nextDouble();
+        super.withdraw(amount);
+    }
+}
+
+class Curr_acct extends Account {
+    Curr_acct() {
+        System.out.println("Enter balance:");
+        balance = sc.nextDouble();
+        service_charge = 10.0; // Example service charge for current account
+    }
+
+    void chequeBook() {
+        System.out.println("Cheque book issued successfully.");
+    }
+}
