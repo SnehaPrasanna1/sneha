@@ -1,0 +1,14 @@
+Pushing 5 integers into the stack:
+Popping and displaying integers from the stack:
+5
+4
+3
+2
+1
+Pushing 5 doubles into the stack:
+Popping and displaying doubles from the stack:
+5.5
+4.4
+3.3
+2.2
+1.1
