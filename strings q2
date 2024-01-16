@@ -1,0 +1,19 @@
+Demonstrate string length,string literal,string concat.
+public class StringDemo {
+    public static void main(String[] args) {
+        // String Length
+        String str = "Hello, Java!";
+        int length = str.length();
+        System.out.println("String Length: " + length);
+
+        // String Literal
+        String literal1 = "Hello"; // String Literal 1
+        String literal2 = "Java";  // String Literal 2
+        System.out.println("String Literal 1: " + literal1);
+        System.out.println("String Literal 2: " + literal2);
+
+        // String Concatenation
+        String concatString = literal1 + ", " + literal2 + "!";
+        System.out.println("Concatenated String: " + concatString);
+    }
+}
