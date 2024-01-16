@@ -1,0 +1,23 @@
+3.Demonstrate tostring()
+class CustomObject {
+    private int value;
+
+    public CustomObject(int value) {
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "CustomObject [value=" + value + "]";
+    }
+}
+
+public class ToStringDemo {
+    public static void main(String[] args) {
+        CustomObject obj = new CustomObject(42);
+        
+        // Using toString() method
+        String objString = obj.toString();
+        System.out.println(objString);
+    }
+}
