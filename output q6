@@ -1,0 +1,4 @@
+Bmsce equals Bmsce -> true
+Bmsce equals College -> false
+Bmsce equals BMSCE -> false
+Bmsce equalsIgnoreCase BMSCE -> true
