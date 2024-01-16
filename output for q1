@@ -1,0 +1,17 @@
+// String Literal
+String 1: Hello, World!
+
+// Using new keyword and character array
+String 2: Hello
+
+// Using new keyword and byte array with character encoding
+String 3: Hello
+
+// Using StringBuffer
+String 4: Hello, Java!
+
+// Using StringBuilder
+String 5: Hello, Java!
+
+// Using String constructor with another String object
+String 6: Original String
