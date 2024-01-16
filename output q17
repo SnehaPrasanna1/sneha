@@ -1,0 +1,106 @@
+Enter details for Student 1:
+Registration Number: 101
+Full Name: John Doe
+Semester: 2
+CGPA: 3.5
+Enter details for Student 2:
+Registration Number: 102
+Full Name: Jane Smith
+Semester: 3
+CGPA: 3.8
+Enter details for Student 3:
+Registration Number: 103
+Full Name: Bob Johnson
+Semester: 2
+CGPA: 3.2
+Enter details for Student 4:
+Registration Number: 104
+Full Name: Alice Brown
+Semester: 4
+CGPA: 3.9
+Enter details for Student 5:
+Registration Number: 105
+Full Name: Sam Wilson
+Semester: 1
+CGPA: 3.6
+
+Student Records:
+
+Registration Number: 101
+Full Name: John Doe
+Semester: 2
+CGPA: 3.5
+
+Registration Number: 102
+Full Name: Jane Smith
+Semester: 3
+CGPA: 3.8
+
+Registration Number: 103
+Full Name: Bob Johnson
+Semester: 2
+CGPA: 3.2
+
+Registration Number: 104
+Full Name: Alice Brown
+Semester: 4
+CGPA: 3.9
+
+Registration Number: 105
+Full Name: Sam Wilson
+Semester: 1
+CGPA: 3.6
+
+Sorted by CGPA:
+
+Registration Number: 103
+Full Name: Bob Johnson
+Semester: 2
+CGPA: 3.2
+
+Registration Number: 101
+Full Name: John Doe
+Semester: 2
+CGPA: 3.5
+
+Registration Number: 105
+Full Name: Sam Wilson
+Semester: 1
+CGPA: 3.6
+
+Registration Number: 102
+Full Name: Jane Smith
+Semester: 3
+CGPA: 3.8
+
+Registration Number: 104
+Full Name: Alice Brown
+Semester: 4
+CGPA: 3.9
+
+Sorted by Name:
+
+Registration Number: 104
+Full Name: Alice Brown
+Semester: 4
+CGPA: 3.9
+
+Registration Number: 102
+Full Name: Jane Smith
+Semester: 3
+CGPA: 3.8
+
+Registration Number: 103
+Full Name: Bob Johnson
+Semester: 2
+CGPA: 3.2
+
+Registration Number: 101
+Full Name: John Doe
+Semester: 2
+CGPA: 3.5
+
+Registration Number: 105
+Full Name: Sam Wilson
+Semester: 1
+CGPA: 3.6
