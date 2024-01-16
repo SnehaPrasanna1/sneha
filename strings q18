@@ -1,0 +1,54 @@
+18. Demonstrate string buffer functions like Setlength(), Charat(), setcharat() , getchars()
+,append() ,Insert(), reverse(),delete(),deletecharat(), Replace(),substring() with simple java
+programs.
+public class StringBufferDemo {
+    public static void main(String[] args) {
+        // Creating a StringBuffer
+        StringBuffer stringBuffer = new StringBuffer("Hello, Java!");
+
+        // Using setLength()
+        stringBuffer.setLength(5);
+        System.out.println("After setLength(5): " + stringBuffer);
+
+        // Using charAt()
+        char charAtIndex = stringBuffer.charAt(1);
+        System.out.println("Character at index 1: " + charAtIndex);
+
+        // Using setCharAt()
+        stringBuffer.setCharAt(1, 'i');
+        System.out.println("After setCharAt(1, 'i'): " + stringBuffer);
+
+        // Using getChars()
+        char[] charArray = new char[5];
+        stringBuffer.getChars(0, 5, charArray, 0);
+        System.out.println("getChars(0, 5, charArray, 0): " + new String(charArray));
+
+        // Using append()
+        stringBuffer.append(" GPT");
+        System.out.println("After append(' GPT'): " + stringBuffer);
+
+        // Using insert()
+        stringBuffer.insert(6, "to ");
+        System.out.println("After insert(6, 'to '): " + stringBuffer);
+
+        // Using reverse()
+        stringBuffer.reverse();
+        System.out.println("After reverse(): " + stringBuffer);
+
+        // Using delete()
+        stringBuffer.delete(3, 7);
+        System.out.println("After delete(3, 7): " + stringBuffer);
+
+        // Using deleteCharAt()
+        stringBuffer.deleteCharAt(0);
+        System.out.println("After deleteCharAt(0): " + stringBuffer);
+
+        // Using replace()
+        stringBuffer.replace(2, 5, "p!");
+        System.out.println("After replace(2, 5, 'p!'): " + stringBuffer);
+
+        // Using substring()
+        String subString = stringBuffer.substring(3, 7);
+        System.out.println("Substring(3, 7): " + subString);
+    }
+}
