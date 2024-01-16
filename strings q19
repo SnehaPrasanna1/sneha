@@ -1,0 +1,58 @@
+Write a Java program to create an abstract class Bird with abstract methods fly() and
+makeSound(). Create subclasses Eagle and Hawk that extend the Bird class and implement the
+respective methods to describe how each bird flies and makes a sound.
+// Abstract class Bird
+abstract class Bird {
+    // Abstract methods
+    public abstract void fly();
+    public abstract void makeSound();
+}
+
+// Subclass Eagle
+class Eagle extends Bird {
+    // Implementation of fly method for Eagle
+    @Override
+    public void fly() {
+        System.out.println("Eagle soars high in the sky.");
+    }
+
+    // Implementation of makeSound method for Eagle
+    @Override
+    public void makeSound() {
+        System.out.println("Eagle screeches loudly.");
+    }
+}
+
+// Subclass Hawk
+class Hawk extends Bird {
+    // Implementation of fly method for Hawk
+    @Override
+    public void fly() {
+        System.out.println("Hawk glides gracefully in the air.");
+    }
+
+    // Implementation of makeSound method for Hawk
+    @Override
+    public void makeSound() {
+        System.out.println("Hawk emits a sharp cry.");
+    }
+}
+
+// Main class to test the Bird subclasses
+public class BirdTest {
+    public static void main(String[] args) {
+        // Create an instance of Eagle
+        Eagle eagle = new Eagle();
+        System.out.println("Eagle:");
+        eagle.fly();
+        eagle.makeSound();
+
+        System.out.println();
+
+        // Create an instance of Hawk
+        Hawk hawk = new Hawk();
+        System.out.println("Hawk:");
+        hawk.fly();
+        hawk.makeSound();
+    }
+}
