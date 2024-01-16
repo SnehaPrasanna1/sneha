@@ -1,0 +1,10 @@
+9. Demonstrate endswith() to give output true and false.
+public class EndsWithDemo {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+
+        // Using endsWith()
+        System.out.println("Ends with 'World!': " + str.endsWith("World!"));
+        System.out.println("Ends with 'Hello': " + str.endsWith("Hello"));
+    }
+}
