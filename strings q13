@@ -1,0 +1,13 @@
+13. Write a Java program using substring() , indexof(), + , for replacing “was” to “is”
+“Thwas was a test. Thwas was, too.”
+public class ReplaceSubstringDemo {
+    public static void main(String[] args) {
+        String originalString = "Thwas was a test. Thwas was, too.";
+
+        // Using substring(), indexOf(), and +
+        String replacedString = originalString.substring(0, originalString.indexOf("was"))
+                + "is" + originalString.substring(originalString.indexOf("was") + 3);
+
+        System.out.println("Replaced String: " + replacedString);
+    }
+}
