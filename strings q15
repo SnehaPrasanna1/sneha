@@ -1,0 +1,11 @@
+15. Write a java program to demonstrate replace(). Replace “College” with “Commege”
+public class ReplaceDemo {
+    public static void main(String[] args) {
+        String originalString = "Welcome to Bmsce College of Engineering";
+
+        // Using replace()
+        String replacedString = originalString.replace("College", "Commege");
+
+        System.out.println("Replaced String: " + replacedString);
+    }
+}
