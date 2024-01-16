@@ -1,0 +1,47 @@
+1. Demonstrate various string constructor with various java programs.
+Using String Literal:
+
+java
+Copy code
+// Using String literal
+String str1 = "Hello, World!";
+System.out.println("String 1: " + str1);
+Using new keyword and a character array:
+
+java
+Copy code
+// Using new keyword and character array
+char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+String str2 = new String(charArray);
+System.out.println("String 2: " + str2);
+Using new keyword and byte array with a specific character encoding (e.g., UTF-8):
+
+java
+Copy code
+// Using new keyword and byte array with character encoding
+byte[] byteArray = {72, 101, 108, 108, 111};
+String str3 = new String(byteArray, java.nio.charset.StandardCharsets.UTF_8);
+System.out.println("String 3: " + str3);
+Using StringBuffer or StringBuilder:
+
+java
+Copy code
+// Using StringBuffer
+StringBuffer stringBuffer = new StringBuffer("Hello");
+stringBuffer.append(", Java!");
+String str4 = stringBuffer.toString();
+System.out.println("String 4: " + str4);
+
+// Using StringBuilder
+StringBuilder stringBuilder = new StringBuilder("Hello");
+stringBuilder.append(", Java!");
+String str5 = stringBuilder.toString();
+System.out.println("String 5: " + str5);
+Using String constructor with another String object:
+
+java
+Copy code
+// Using String constructor with another String object
+String originalStr = "Original String";
+String str6 = new String(originalStr);
+System.out.println("String 6: " + str6);
