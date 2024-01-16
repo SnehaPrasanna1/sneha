@@ -1,0 +1,10 @@
+8. Demonstrate startwith() to give output true and false.
+public class StartsWithDemo {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+
+        // Using startsWith()
+        System.out.println("Starts with 'Hello': " + str.startsWith("Hello"));
+        System.out.println("Starts with 'World': " + str.startsWith("World"));
+    }
+}
