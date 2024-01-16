@@ -1,0 +1,11 @@
+After setLength(5): Hello
+Character at index 1: e
+After setCharAt(1, 'i'): Hillo
+getChars(0, 5, charArray, 0): Hillo
+After append(' GPT'): Hillo GPT
+After insert(6, 'to '): Hillo to GPT
+After reverse(): TPG ot olliH
+After delete(3, 7): TP ot olliH
+After deleteCharAt(0): P ot olliH
+After replace(2, 5, 'p!'): Pp! ot olliH
+Substring(3, 7): ot o
