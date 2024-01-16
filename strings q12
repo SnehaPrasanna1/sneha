@@ -1,0 +1,12 @@
+12. Write a Java program to perform sorting of numbers from 10 to 1 using compareto()
+import java.util.Arrays;
+
+public class NumberSortingDemo {
+    public static void main(String[] args) {
+        Integer[] numbers = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+        Arrays.sort(numbers);
+
+        System.out.println("Sorted Numbers: " + Arrays.toString(numbers));
+    }
+}
