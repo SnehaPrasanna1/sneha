@@ -1,0 +1,15 @@
+4. Using getchars(),extract Bmsce from "Welcome to Bmsce college"
+public class GetCharsDemo {
+    public static void main(String[] args) {
+        String sourceString = "Welcome to Bmsce college";
+        char[] targetArray = new char[5]; // Array to store the extracted characters
+
+        // Extract "Bmsce" from sourceString starting at index 11
+        sourceString.getChars(11, 16, targetArray, 0);
+
+        // Convert char array to String
+        String resultString = new String(targetArray);
+
+        System.out.println("Extracted Substring: " + resultString);
+    }
+}
