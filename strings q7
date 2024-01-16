@@ -1,0 +1,3 @@
+7. Using regionmatches() find the substring “Bmsce college “ from the string “Welcome to
+Bmsce College of Engineering” , if matches display substring is matched otherwise display not
+matched
