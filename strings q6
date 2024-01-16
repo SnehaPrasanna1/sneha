@@ -1,0 +1,23 @@
+6.Check the following output and write the java programs using string function
+Bmsce equals Bmsce -&gt; true
+Bmsce equals College -&gt; false
+Bmsce equals BMSCE -&gt; false
+Bmsce equalsIgnoreCase BMSCE -&gt; true
+
+public class StringComparisonDemo {
+    public static void main(String[] args) {
+        String str = "Bmsce";
+
+        // Comparing with equals()
+        System.out.println("Bmsce equals Bmsce -> " + str.equals("Bmsce"));
+
+        // Comparing with equals()
+        System.out.println("Bmsce equals College -> " + str.equals("College"));
+
+        // Comparing with equals()
+        System.out.println("Bmsce equals BMSCE -> " + str.equals("BMSCE"));
+
+        // Comparing with equalsIgnoreCase()
+        System.out.println("Bmsce equalsIgnoreCase BMSCE -> " + str.equalsIgnoreCase("BMSCE"));
+    }
+}
