@@ -1,0 +1,102 @@
+// File: CIE package
+package CIE;
+
+public class Student {
+    String usn;
+    String name;
+    int sem;
+
+    // Constructor
+    public Student(String usn, String name, int sem) {
+        this.usn = usn;
+        this.name = name;
+        this.sem = sem;
+    }
+}
+
+public class Internals extends Student {
+    int[] internalMarks;
+
+    // Constructor
+    public Internals(String usn, String name, int sem, int[] internalMarks) {
+        super(usn, name, sem);
+        this.internalMarks = internalMarks;
+    }
+}
+// File: SEE package
+package SEE;
+
+public class External extends CIE.Student {
+    int[] seeMarks;
+
+    // Constructor
+    public External(String usn, String name, int sem, int[] seeMarks) {
+        super(usn, name, sem);
+        this.seeMarks = seeMarks;
+    }
+}
+// File: Main program to declare final marks
+import CIE.Internals;
+import SEE.External;
+
+public class FinalMarks {
+    public static void main(String[] args) {
+        // Example usage
+        // Internal marks for a student in five courses
+        int[] internalMarks1 = {80, 75, 90, 85, 88};
+        Internals student1 = new Internals("1BM18CS001", "John Doe", 3, internalMarks1);
+
+        // SEE marks for another student in five courses
+        int[] seeMarks2 = {85, 78, 92, 89, 91};
+        External student2 = new External("1BM18CS002", "Jane Doe", 3, seeMarks2);
+
+        // Displaying information
+        displayStudentDetails(student1);
+        displayStudentDetails(student2);
+    }
+
+    // Method to display student details and marks
+    public static void displayStudentDetails(Internals student) {
+        System.out.println("USN: " + student.usn);
+        System.out.println("Name: " + student.name);
+        System.out.println("Semester: " + student.sem);
+        System.out.println("Internal Marks:");
+        for (int i = 0; i < student.internalMarks.length; i++) {
+            System.out.println("Course " + (i + 1) + ": " + student.internalMarks[i]);
+        }
+        System.out.println("Total Internal Marks: " + calculateTotalMarks(student.internalMarks));
+        System.out.println("--------------------");
+    }
+
+    // Method to calculate total marks
+    public static int calculateTotalMarks(int[] marks) {
+        int total = 0;
+        for (int mark : marks) {
+            total += mark;
+        }
+        return total;
+    }
+}
+output: USN: 1BM18CS001
+Name: John Doe
+Semester: 3
+Internal Marks:
+Course 1: 80
+Course 2: 75
+Course 3: 90
+Course 4: 85
+Course 5: 88
+Total Internal Marks: 418
+--------------------
+
+USN: 1BM18CS002
+Name: Jane Doe
+Semester: 3
+Internal Marks:
+Course 1: 85
+Course 2: 78
+Course 3: 92
+Course 4: 89
+Course 5: 91
+Total Internal Marks: 435
+--------------------
